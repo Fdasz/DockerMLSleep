@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  jupyter:
+    image: jupyter/base-notebook:latest
+    container_name: jupyter_notebook
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./notebooks:/home/jovyan/work
+      - ./requirements.txt:/tmp/requirements.txt
+    environment:
+      - JUPYTER_TOKEN=
+    command: >
+      bash -c "pip install -r /tmp/requirements.txt &&
+               start-notebook.sh"
