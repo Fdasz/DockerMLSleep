@@ -2,7 +2,7 @@
 
 Para iniciar el compose se utiliza el comando 
 ```bash
-docker-compose up,
+docker-compose up
 ```
 Desde ahi, se ingresa al link proporcionado desde la consola, en la cual se debera ingresar a la carpeta work para revisar los notebooks creados.
 
